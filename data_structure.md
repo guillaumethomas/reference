@@ -15,6 +15,8 @@ The output is in nondecreasing order (each element is no smaller than the previo
 The output is a permutation (reordering but with all of the original elements) of the input.
 Further, the data is often taken to be in an array, which allows random access, rather than a list, which only allows sequential access, though often algorithms can be applied with suitable modification to either type of data.
 
+tree traversal (also known as tree search) is a form of graph traversal and refers to the process of visiting (checking and/or updating) each node in a tree data structure, exactly once. Such traversals are classified by the order in which the nodes are visited. The following algorithms are described for a binary tree, but they may be generalized to other trees as well.
+
 # Data Structure Characterization
 
 ## Linear
