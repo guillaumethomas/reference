@@ -15,4 +15,21 @@ some out-of-order elements nearly in position.
 
 '''
 
+
+def bubble_sort(lst):
+    swap = True
+    while swap:
+        swap = False
+        for i in range(1, len(lst)):
+            if lst[i - 1] > lst[i]:
+                lst[i - 1], lst[i] = lst[i], lst[i - 1]
+                print(lst)
+                swap = True
+        print('end loop')
+    return lst
+
+
 if __name__ == "__main__":
+    lst = [1, 2, 5, 3, 9, 4, 15, 23, 8, 12]
+    a = bubble_sort(lst)
+    print(a)
