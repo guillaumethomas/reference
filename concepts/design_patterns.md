@@ -1,6 +1,6 @@
 # Design Pattern
 
-Fromt he gang of four: Design Patterns: Elements of Reusable Object-Oriented Software
+From the gang of four: Design Patterns: Elements of Reusable Object-Oriented Software
 
 ## Types
 
@@ -8,7 +8,7 @@ Fromt he gang of four: Design Patterns: Elements of Reusable Object-Oriented Sof
 	- Structutal Patterns
 	- Behavorial Patterns 
 
-## Creati0nal Patterns:
+## Creational Patterns:
 
 ### Abstract Factory
 
