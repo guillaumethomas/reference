@@ -4,9 +4,9 @@ From the gang of four: Design Patterns: Elements of Reusable Object-Oriented Sof
 
 ## Types
 
-	- Creational Patterns
-	- Structutal Patterns
-	- Behavorial Patterns 
+- Creational Patterns
+- Structutal Patterns
+- Behavorial Patterns 
 
 ## Creational Patterns:
 
