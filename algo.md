@@ -45,6 +45,14 @@ Conceptually, a merge sort works as follows:
     - Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).
     - Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
 
+- **Selection sort**
+    - Find the smallest card. Swap it with the first card.
+    - Find the second-smallest card. Swap it with the second card.
+    - Find the third-smallest card. Swap it with the third card.
+    - Repeat finding the next-smallest card, and swapping it into the correc position until the array is sorted.
+
+This algorithm is called selection sort because it repeatedly selects the next-smallest element and swaps it into place.
+
 - **Quicksort** is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation (formally, a total order) is defined. In efficient implementations it is not a stable sort, meaning that the relative order of equal sort items is not preserved. Quicksort can operate in-place on an array, requiring small additional amounts of memory to perform the sorting. It is very similar to selection sort, except that it does not always choose worst-case partition.
 Mathematical analysis of quicksort shows that, on average, the algorithm takes O(n log n) comparisons to sort n items. In the worst case, it makes O(n2) comparisons, though this behavior is rare.
 
