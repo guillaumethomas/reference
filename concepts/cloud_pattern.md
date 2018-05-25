@@ -1,10 +1,10 @@
 # Cloud Patterns
 
-1. Cache-aside 
+1. **Cache-aside** 
 
 Load data on demand into a cache from a data store. This pattern can improve performance and also helps to maintain consistency between data held in the cache and the data in the underlying data store.
 
-2. Circuirt breaker
+2. **Circuirt breaker**
 
 Handle faults that may take a variable amount of time to rectify when connecting to a remote service or resource. This pattern can improve the stability and resiliency of an application.
 
