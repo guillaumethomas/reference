@@ -53,17 +53,53 @@ Create indexes over the fields in data stores that are frequently referenced by 
 
 13. Leader Election
 
+Coordinate the actions performed by a collection of collaborating task instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the other instances. This pattern can help to ensure that tasks do not conflict with each other, cause contention for shared resources, or inadvertently interfere with the work that other task instances are performing.
 
 
 14. Materialized View 
-15. Pipes and Filters Pattern
+
+Generate prepopulated views over the data in one or more data stores when the data is formatted in a way that does not favor the required query operations. This pattern can help to support efficient querying and data extraction, and improve application performance.
+
+15. Pipes and Filters 
+
+Decompose a task that performs complex processing into a series
+of discrete elements that can be reused. This pattern can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently
+
 16. Priority Queues 
-17. Queue-Based Leveling
-18. Retry Pattern
+
+Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those of a lower priority. This pattern is useful in applications that offer different service level guarantees to individual types of client.
+
+17. Queue-Based 
+
+Use a queue that acts as a buffer between a task and a service that it invokes in order to smooth intermittent heavy loads that may otherwise cause the service to fail or the task to timeout. This pattern can help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.
+
+18. Retry 
+
+Enable an application to handle temporary failures when connecting to
+a service or network resource by transparently retrying the operation in the expectation that the failure is transient. This pattern can improve the stability of the application.
+
 19. Runtime Reconfiguration
-20. Scheduler Agent Supervisor
+
+Design an application so that it can be reconfigured without requiring redeployment or restarting the application. This helps to maintain availability and minimize downtime.
+
+20. Scheduler Agent 
+
+Coordinate a set of actions across a distributed set of services and other remote resources, attempt to transparently handle faults if any of these actions fail, or undo the effects of the work performed if the system cannot recover from a fault. This pattern can add resiliency to a distributed system by enabling it to recover and retry actions that fail due to transient exceptions, long-lasting faults, and process failures.
+
 21. Sharding Pattern
+
+Divide a data store into a set of horizontal partitions shards. This pattern can improve scalability when storing and accessing large volumes of data.
+
 22. Static Content Hosting
-23. Throttiling 
+
+Deploy static content to a cloud-based storage service that can deliver these directly to the client. This pattern can reduce the requirement for potentially expensive compute instances.
+
+23. Throttling 
+
+Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service. This pattern can allow the system to continue to function and meet service level agreements, even when an increase in demand places an extreme load on resources.
+
 24. Valet Key
+
+Use a token or key that provides clients with restricted direct access
+to a specific resource or service in order to offload data transfer operations from the application code. This pattern is particularly useful in applications that use cloud-hosted storage systems or queues, and can minimize cost and maximize scalability and performance.
 
