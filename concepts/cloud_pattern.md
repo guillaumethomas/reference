@@ -1,6 +1,9 @@
 # Cloud Patterns
 
 1. Cache-aside 
+
+Load data on demand into a cache from a data store. This pattern can improve performance and also helps to maintain consistency between data held in the cache and the data in the underlying data store.
+
 2. Circuirt breaker
 3. Compensating Transaction
 4. Competing Consumer
