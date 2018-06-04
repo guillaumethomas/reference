@@ -7,6 +7,7 @@ In Place (no need for extra storage)
 
 def insertion_sort(lst):
     i = 1
+    # looping with position 
     while i < len(lst):
         j = i
         while all([j > 0, lst[j - 1] > lst[j]]):

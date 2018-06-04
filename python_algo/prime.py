@@ -39,7 +39,7 @@ def display_prime(numb):
     if len(lst) > 1:
         lst_str = [str(i) for i in lst]
         factors = ', '.join(lst_str)
-        str_l = '{} has the following prime_factor {}'.format(numb, factors)
+        str_l = '{} has the following prime factors {}'.format(numb, factors)
     else:
         str_l = '{} is prime'.format(numb)
     return str_l
